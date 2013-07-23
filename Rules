@@ -1,0 +1,75 @@
+#!/usr/bin/env ruby
+
+require 'compass'
+Compass.add_project_configuration 'compass/config.rb'
+
+preprocess do
+  generate_chapters
+end
+
+compile '/style/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '/style/_*/' do
+  # don’t compile partials
+end
+
+compile 'script/*/' do
+  filter :erb
+  filter :uglify_js
+end
+
+compile 'vendor/*/' do
+  # nothing
+end
+
+compile '/pages/*' do
+  filter :rdiscount
+end
+
+compile '/capitulo-*' do
+  filter :erb
+  layout 'default'
+end
+
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    filter :erb
+    layout 'default'
+  end
+end
+
+route '/style/_*/' do
+  nil
+end
+
+route '/style/*/' do
+  item.identifier.chop + '.css'
+end
+
+route '/script/*/' do
+  item.identifier.chop + '.js'
+end
+
+route 'script/vendor/*/' do
+  nil
+end
+
+route '/pages/*' do
+  nil
+end
+
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
+  end
+end
+
+layout '*', :slim

@@ -1,0 +1,9 @@
+- sections = pages[@chapter]
+
+article class="chapter chapter-#{chapter}"
+  section.section.section-0
+    h1.cover.page Title
+
+  - for i, section in sections
+    ==render 'section', index: i, section: section
+

@@ -1,0 +1,6 @@
+section class="section section-#{index}"
+  .page.cover Subtitle
+
+  - for i, page in section
+    ==render 'page', index: i, page: page
+

@@ -1,8 +1,11 @@
-Crashlog created at 2013-07-23 07:42:26 -0500
+Crashlog created at 2013-07-23 11:45:43 -0500
 
 ===== MESSAGE:
 
-Sass::SyntaxError: Undefined mixin 'transform2d'.
+Slim::Parser::SyntaxError: Expected closing quote "
+  (__TEMPLATE__), Line 5, Column 69
+    meta name="viewport" content="width=device-width, initial-scale=1
+                                                                     ^
 
 ===== COMPILATION STACK:
 
@@ -10,89 +13,75 @@ Sass::SyntaxError: Undefined mixin 'transform2d'.
 
 ===== STACK TRACE:
 
-  0. content/style/app.sass:8:in `transform2d'
-  1. content/style/app.sass:8
-  2. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-  3. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-  4. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  5. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  6. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
-  7. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  8. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  9. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  10. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  11. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  12. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-  13. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-  14. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  15. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-  16. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
-  17. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-  18. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-  19. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-  20. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-  21. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-  22. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-  23. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-  24. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-  25. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
-  26. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
-  27. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
-  28. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
-  29. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/filters/sass.rb:40:in `run'
-  30. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
-  31. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/result_data/item_rep.rb:344:in `filter'
-  32. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
-  33. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule_context.rb:55:in `filter'
-  34. ./Rules:11:in `block in load'
-  35. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
-  36. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
-  37. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:384:in `compile_rep'
-  38. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:340:in `block in compile_reps'
-  39. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `loop'
-  40. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `compile_reps'
-  41. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:89:in `run'
-  42. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:58:in `compile'
-  43. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:65:in `block in recompile'
-  44. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `chdir'
-  45. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `recompile'
-  46. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:28:in `run_on_changes'
-  47. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:99:in `block in run_supervised_task'
-  48. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `catch'
-  49. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `run_supervised_task'
-  50. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:144:in `block in run_first_task_found'
-  51. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:142:in `each'
-  52. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:142:in `run_first_task_found'
-  53. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:79:in `block in run_on_changes'
-  54. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
-  55. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `each'
-  56. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `block (2 levels) in scoped_guards'
-  57. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `catch'
-  58. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `block in scoped_guards'
-  59. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `each'
-  60. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `scoped_guards'
-  61. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:72:in `run_on_changes'
-  62. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:105:in `block (2 levels) in setup_listener'
-  63. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:368:in `block in within_preserved_state'
-  64. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `synchronize'
-  65. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `within_preserved_state'
-  66. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:104:in `block in setup_listener'
-  67. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:252:in `call'
-  68. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:252:in `on_change'
-  69. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:287:in `block in initialize_adapter'
-  70. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `call'
-  71. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `report_changes'
-  72. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:321:in `poll_changed_directories'
-  ... 75 more lines omitted. See full crash log for details.
+  0. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:475:in `syntax_error!'
+  1. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:467:in `parse_quoted_attribute'
+  2. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:381:in `parse_attributes'
+  3. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:314:in `parse_tag'
+  4. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:226:in `parse_line_indicators'
+  5. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:174:in `parse_line'
+  6. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib/slim/parser.rb:67:in `call'
+  7. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib/temple/engine.rb:50:in `block in call'
+  8. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib/temple/engine.rb:50:in `each'
+  9. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib/temple/engine.rb:50:in `inject'
+  10. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib/temple/engine.rb:50:in `call'
+  11. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib/temple/mixins/template.rb:10:in `compile'
+  12. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib/temple/templates/tilt.rb:28:in `prepare'
+  13. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+  14. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/filters/slim.rb:25:in `new'
+  15. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/filters/slim.rb:25:in `run'
+  16. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  17. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/result_data/item_rep.rb:409:in `layout'
+  18. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  19. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  20. ./Rules:41:in `block in load'
+  21. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  22. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  23. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:384:in `compile_rep'
+  24. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:340:in `block in compile_reps'
+  25. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `loop'
+  26. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `compile_reps'
+  27. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  28. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  29. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:65:in `block in recompile'
+  30. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `chdir'
+  31. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `recompile'
+  32. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:28:in `run_on_changes'
+  33. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:99:in `block in run_supervised_task'
+  34. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `catch'
+  35. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `run_supervised_task'
+  36. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:144:in `block in run_first_task_found'
+  37. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:142:in `each'
+  38. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:142:in `run_first_task_found'
+  39. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:79:in `block in run_on_changes'
+  40. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
+  41. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `each'
+  42. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `block (2 levels) in scoped_guards'
+  43. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `catch'
+  44. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `block in scoped_guards'
+  45. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `each'
+  46. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `scoped_guards'
+  47. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:72:in `run_on_changes'
+  48. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:105:in `block (2 levels) in setup_listener'
+  49. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:368:in `block in within_preserved_state'
+  50. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `synchronize'
+  51. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `within_preserved_state'
+  52. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:104:in `block in setup_listener'
+  53. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:252:in `call'
+  54. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:252:in `on_change'
+  55. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:287:in `block in initialize_adapter'
+  56. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `call'
+  57. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `report_changes'
+  58. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:321:in `poll_changed_directories'
+  ... 61 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
 nanoc 3.6.4 © 2007-2013 Denis Defreyne.
-Running ruby 2.0.0 (2013-05-14) on x86_64-linux with RubyGems 2.0.3.
+Running ruby 2.0.0 (2013-05-14) on x86_64-darwin11.4.2 with RubyGems 2.0.3.
 
 ===== SYSTEM INFORMATION:
 
-Linux humans-are-dead 3.8.0-26-generic #38-Ubuntu SMP Mon Jun 17 21:43:33 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
+Darwin camiloaguilar.local 11.4.2 Darwin Kernel Version 11.4.2: Thu Aug 23 16:25:48 PDT 2012; root:xnu-1699.32.7~1/RELEASE_X86_64 x86_64
 
 ===== INSTALLED GEMS:
 
@@ -134,84 +123,57 @@ Linux humans-are-dead 3.8.0-26-generic #38-Ubuntu SMP Mon Jun 17 21:43:33 UTC 20
 
 ===== ENVIRONMENT:
 
-BUNDLE_BIN_PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/bin/bundle"
-BUNDLE_GEMFILE => "/home/camilo/Projects/tutorial/Gemfile"
-COLORTERM => "gnome-terminal"
-COLUMNS => "80"
-COMPIZ_BIN_PATH => "/usr/bin/"
-COMPIZ_CONFIG_PROFILE => "ubuntu"
-DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-BEHySDHCA6,guid=7cf89162cbc4f141a9c4817e51ee7385"
-DEFAULTS_PATH => "/usr/share/gconf/ubuntu.default.path"
-DESKTOP_SESSION => "ubuntu"
-DISPLAY => ":0.0"
-GDMSESSION => "ubuntu"
-GEM_HOME => "/home/camilo/.rvm/gems/ruby-2.0.0-p195"
-GEM_PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195:/home/camilo/.rvm/gems/ruby-2.0.0-p195@global"
-GNOME_DESKTOP_SESSION_ID => "this-is-deprecated"
-GNOME_KEYRING_CONTROL => "/run/user/camilo/keyring-uGrzPe"
-GNOME_KEYRING_PID => "2278"
-GPG_AGENT_INFO => "/run/user/camilo/keyring-uGrzPe/gpg:0:1"
+Apple_PubSub_Socket_Render => "/tmp/launch-zQXigD/Render"
+Apple_Ubiquity_Message => "/tmp/launch-AMcVM9/Apple_Ubiquity_Message"
+BUNDLE_BIN_PATH => "/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/bin/bundle"
+BUNDLE_GEMFILE => "/Volumes/Files/caguilar/Projects/book/Gemfile"
+COLUMNS => "91"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-6c0lO6/org.x:0"
+GEM_HOME => "/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195"
+GEM_PATH => "/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195:/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195@global"
 GREP_COLOR => "1;32"
 GREP_OPTIONS => "--color=auto"
-GTK_MODULES => "overlay-scrollbar"
-GUARD_NOTIFICATIONS => "---\n- :name: :notifysend\n  :options: {}\n- :name: :terminal_title\n  :options: {}\n"
+GUARD_NOTIFICATIONS => "---\n- :name: :terminal_title\n  :options: {}\n"
 GUARD_NOTIFY => "true"
-HOME => "/home/camilo"
-IRBRC => "/home/camilo/.rvm/rubies/ruby-2.0.0-p195/.irbrc"
-LANG => "en_US.UTF-8"
-LC_ADDRESS => "es_CO.UTF-8"
-LC_CTYPE => "en_US.UTF-8"
-LC_IDENTIFICATION => "es_CO.UTF-8"
-LC_MEASUREMENT => "es_CO.UTF-8"
-LC_MONETARY => "es_CO.UTF-8"
-LC_NAME => "es_CO.UTF-8"
-LC_NUMERIC => "es_CO.UTF-8"
-LC_PAPER => "es_CO.UTF-8"
-LC_TELEPHONE => "es_CO.UTF-8"
-LC_TIME => "es_CO.UTF-8"
+HOME => "/Volumes/Files/caguilar"
+IRBRC => "/Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/.irbrc"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w0t0p0"
+LC_CTYPE => ""
 LESS => "-R"
-LINES => "24"
-LOGNAME => "camilo"
+LINES => "47"
+LOGNAME => "camiloaguilar"
 LSCOLORS => "Gxfxcxdxbxegedabagacad"
-MANDATORY_PATH => "/usr/share/gconf/ubuntu.mandatory.path"
-MY_RUBY_HOME => "/home/camilo/.rvm/rubies/ruby-2.0.0-p195"
-NODE_PATH => "/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript"
-OLDPWD => "/home/camilo"
+MY_RUBY_HOME => "/Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195"
+NODE_PATH => "/usr/local/lib/jsctags/:"
+OLDPWD => "/Volumes/Files/caguilar/Projects"
 PAGER => "less"
-PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195/bin:/usr/local/heroku/bin:/home/camilo/.rvm/gems/ruby-2.0.0-p195@global/bin:/home/camilo/.rvm/rubies/ruby-2.0.0-p195/bin:/home/camilo/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/camilo/.phpbrew/php/php-5.4.16/bin"
-PWD => "/home/camilo/Projects/tutorial"
-RUBYOPT => "-I/home/camilo/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/lib -rbundler/setup"
+PATH => "/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/bin:/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195@global/bin:/Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/bin:/Volumes/Files/caguilar/.rvm/bin:/usr/local/mysql/bin:/usr/local/php5/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Volumes/Files/caguilar/Development/sdk/tools:/Volumes/Files/caguilar/Development/elasticbeanstalk/eb/macosx/python2.7"
+PHPBREW_HOME => "/Volumes/Files/caguilar/.phpbrew"
+PHPBREW_ROOT => "/Volumes/Files/caguilar/.phpbrew"
+PWD => "/Volumes/Files/caguilar/Projects/book"
+RUBYOPT => "-I/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/lib -rbundler/setup"
 RUBY_VERSION => "ruby-2.0.0-p195"
-SESSION_MANAGER => "local/humans-are-dead:@/tmp/.ICE-unix/2289,unix/humans-are-dead:/tmp/.ICE-unix/2289"
-SHELL => "/usr/bin/zsh"
+SHELL => "/bin/zsh"
 SHLVL => "1"
-SSH_AGENT_PID => "2335"
-SSH_AUTH_SOCK => "/run/user/camilo/keyring-uGrzPe/ssh"
+SSH_AUTH_SOCK => "/tmp/launch-TdTROq/Listeners"
 TERM => "xterm"
-TEXTDOMAIN => "im-config"
-TEXTDOMAINDIR => "/usr/share/locale/"
-UBUNTU_MENUPROXY => "libappmenu.so"
-USER => "camilo"
-WINDOWID => "58720262"
-XAUTHORITY => "/home/camilo/.Xauthority"
-XDG_CONFIG_DIRS => "/etc/xdg/xdg-ubuntu:/etc/xdg"
-XDG_CURRENT_DESKTOP => "Unity"
-XDG_DATA_DIRS => "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"
-XDG_RUNTIME_DIR => "/run/user/camilo"
-XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
-XDG_SESSION_COOKIE => "55f4ca66c7023ab312e5019251903d21-1374581636.49779-535886721"
-XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
-_ => "/home/camilo/.rvm/gems/ruby-2.0.0-p195/bin/guard"
-_ORIGINAL_GEM_PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195:/home/camilo/.rvm/gems/ruby-2.0.0-p195@global"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/nj/_7sjjg792xq22ltx4vd7pzpm0000gp/T/"
+USER => "camiloaguilar"
+_ => "/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/bin/guard"
+_ORIGINAL_GEM_PATH => "/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195:/Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195@global"
+__CF_USER_TEXT_ENCODING => "0x1F6:0:86\n"
 rvm_alias_expanded => ""
-rvm_bin_path => "/home/camilo/.rvm/bin"
+rvm_bin_path => "/Volumes/Files/caguilar/.rvm/bin"
 rvm_docs_type => ""
 rvm_gemstone_package_file => ""
 rvm_gemstone_url => ""
 rvm_niceness => ""
 rvm_nightly_flag => ""
-rvm_path => "/home/camilo/.rvm"
-rvm_prefix => "/home/camilo"
+rvm_path => "/Volumes/Files/caguilar/.rvm"
+rvm_prefix => "/Volumes/Files/caguilar"
 rvm_proxy => ""
 rvm_quiet_flag => ""
 rvm_ruby_file => ""
@@ -310,49 +272,49 @@ DEPENDENCIES
 
 ===== LOAD PATHS:
 
-  0. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/http_parser.rb-0.5.3/lib
-  1. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/em-websocket-0.5.0/lib/../lib
-  2. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/uglifier-2.1.1/lib
-  3. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib
-  4. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/tilt-1.4.1/lib
-  5. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib
-  6. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/rdiscount-2.1.6/lib
-  7. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib
-  8. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib
-  9. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-livereload-1.4.0/lib
-  10. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib
-  11. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/thor-0.18.1/lib
-  12. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib
-  13. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/slop-3.4.5/lib
-  14. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/method_source-0.8.1/lib
-  15. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/lumberjack-1.0.4/lib
-  16. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib
-  17. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/rb-kqueue-0.2.0/lib
-  18. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/rb-inotify-0.9.0/lib
-  19. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/rb-fsevent-0.9.3/lib
-  20. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/formatador-0.2.4/lib
-  21. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/ffi-1.9.0/lib
-  22. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/ffi-1.9.0/ext/ffi_c
-  23. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib
-  24. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/multi_json-1.7.7/lib
-  25. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/em-websocket-0.5.0/lib
-  26. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/http_parser.rb-0.5.3/lib
-  27. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/eventmachine-1.0.3/lib
-  28. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/cri-2.3.0/lib
-  29. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/lib
-  30. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib
-  31. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/fssm-0.2.10/lib
-  32. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/colored-1.2/lib
-  33. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/coderay-1.0.9/lib
-  34. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/chunky_png-1.2.8/lib
-  35. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/adsf-1.1.1/lib
-  36. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/rack-1.5.2/lib
-  37. /home/camilo/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/lib
-  38. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/site_ruby/2.0.0
-  39. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/site_ruby/2.0.0/x86_64-linux
-  40. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/site_ruby
-  41. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/vendor_ruby/2.0.0
-  42. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/vendor_ruby/2.0.0/x86_64-linux
-  43. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/vendor_ruby
-  44. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0
-  45. /home/camilo/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/x86_64-linux
+  0. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/http_parser.rb-0.5.3/lib
+  1. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/em-websocket-0.5.0/lib/../lib
+  2. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/uglifier-2.1.1/lib
+  3. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slim-2.0.0/lib
+  4. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/tilt-1.4.1/lib
+  5. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/temple-0.6.5/lib
+  6. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/rdiscount-2.1.6/lib
+  7. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib
+  8. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib
+  9. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-livereload-1.4.0/lib
+  10. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib
+  11. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/thor-0.18.1/lib
+  12. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib
+  13. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/slop-3.4.5/lib
+  14. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/method_source-0.8.1/lib
+  15. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/lumberjack-1.0.4/lib
+  16. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib
+  17. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/rb-kqueue-0.2.0/lib
+  18. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/rb-inotify-0.9.0/lib
+  19. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/rb-fsevent-0.9.3/lib
+  20. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/formatador-0.2.4/lib
+  21. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/ffi-1.9.0/lib
+  22. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/ffi-1.9.0/ext/ffi_c
+  23. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib
+  24. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/multi_json-1.7.7/lib
+  25. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/em-websocket-0.5.0/lib
+  26. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/http_parser.rb-0.5.3/lib
+  27. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/eventmachine-1.0.3/lib
+  28. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/cri-2.3.0/lib
+  29. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/lib
+  30. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.2.9/lib
+  31. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/fssm-0.2.10/lib
+  32. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/colored-1.2/lib
+  33. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/coderay-1.0.9/lib
+  34. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/chunky_png-1.2.8/lib
+  35. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/adsf-1.1.1/lib
+  36. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195/gems/rack-1.5.2/lib
+  37. /Volumes/Files/caguilar/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/lib
+  38. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/site_ruby/2.0.0
+  39. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/site_ruby/2.0.0/x86_64-darwin11.4.2
+  40. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/site_ruby
+  41. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/vendor_ruby/2.0.0
+  42. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/vendor_ruby/2.0.0/x86_64-darwin11.4.2
+  43. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/vendor_ruby
+  44. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0
+  45. /Volumes/Files/caguilar/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/x86_64-darwin11.4.2

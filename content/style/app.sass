@@ -1,5 +1,11 @@
 @import "compass/reset"
 @import "compass/css3/transition"
+@import "compass/typography/text/replacement"
+
+body
+  color: white
+  font: 24px/1.2em Arial, Helvetica, sans-serif
+  width: 768px
 
 .main
   height: 1024px
@@ -9,16 +15,52 @@
 .chapter
   +transition(left 0.5s ease-out, top 0.5s ease-out)
   white-space: nowrap
-  position: absolute
+  position: relative
   left: 0
   top: 0
 
 .section
   display: inline-block
   vertical-align: top
-  outline: 1px solid black
 
 .page
   height: 1024px
   width: 768px
+  background: skyblue
 
+  .content
+    width: 500px
+    margin: 0 auto
+    padding-top: 70px
+
+/* Chapter 3 */
+
+.chapter-3
+  .section
+    .cover
+      background-size: cover
+  .section-0
+    .cover
+      +replace-text('3/0/cover.jpg')
+  .section-1
+    .cover
+      +replace-text('3/1/cover.jpg')
+  .section-2
+    .cover
+      +replace-text('3/2/cover.jpg')
+  .section-3
+    .cover
+      +replace-text('3/3/cover.jpg')
+  .section-4
+    .cover
+      +replace-text('3/4/cover.jpg')
+  .section-5
+    .cover
+      +replace-text('3/5/cover.jpg')
+
+/* Viewport ----------- */
+@-webkit-viewport {        width: device-width; }
+@-moz-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@-ms-viewport {        width: device-width; }
+@viewport {        width: device-width; }

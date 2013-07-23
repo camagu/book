@@ -25,7 +25,7 @@ compile 'vendor/*/' do
 end
 
 compile '/pages/*' do
-  filter :rdiscount
+  filter :slim
 end
 
 compile '/capitulo-*' do

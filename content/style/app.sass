@@ -24,43 +24,30 @@ body
   vertical-align: top
 
 .page
+  background-size: cover
   height: 1024px
   width: 768px
-  background: skyblue
 
   .content
     width: 500px
     margin: 0 auto
     padding-top: 70px
 
-/* Chapter 3 */
+<% pages.each_pair do |i, chapter| %>
+.chapter-<%= i %>
+  <% chapter.each_pair do |j, section| %>
+  .section-<%= j %>
+    <% section.each_pair do |k, page| %>
+    .page-<%= k %>
+      +replace-text('<%= page.identifier.sub("/pages/", "").gsub(/\/$/, "") + ".jpg" %>')
 
-.chapter-3
-  .section
-    .cover
-      background-size: cover
-  .section-0
-    .cover
-      +replace-text('3/0/cover.jpg')
-  .section-1
-    .cover
-      +replace-text('3/1/cover.jpg')
-  .section-2
-    .cover
-      +replace-text('3/2/cover.jpg')
-  .section-3
-    .cover
-      +replace-text('3/3/cover.jpg')
-  .section-4
-    .cover
-      +replace-text('3/4/cover.jpg')
-  .section-5
-    .cover
-      +replace-text('3/5/cover.jpg')
+    <% end %>
+  <% end %>
+<% end %>
 
 /* Viewport ----------- */
-@-webkit-viewport {        width: device-width; }
-@-moz-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@-ms-viewport {        width: device-width; }
-@viewport {        width: device-width; }
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-o-viewport      { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@viewport         { width: device-width; }

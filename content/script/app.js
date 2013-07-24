@@ -7,7 +7,7 @@ Array.prototype.has = function(element) {
 
 $(function() {
   (function() {
-    var handles = $('.cover').hammer(),
+    var handles = $('.page-0').hammer(),
         target  = handles.parents('.chapter');
 
     handles.not(':first').on('swiperight', function() {
@@ -21,7 +21,7 @@ $(function() {
 
   (function() {
     $('.section').each(function() {
-      var handles = $('.page').hammer(),
+      var handles = $(this).find('.page').hammer(),
           target  = handles.parents('.chapter');
 
       handles.not(':last').on('swipeup', function() {

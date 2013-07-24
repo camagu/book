@@ -8,6 +8,7 @@ preprocess do
 end
 
 compile '/style/*/' do
+  filter :erb
   filter :sass, Compass.sass_engine_options
 end
 

@@ -34,7 +34,7 @@ body
     padding-top: 70px
 
 <% pages.each_pair do |i, chapter| %>
-.chapter-<%= i %>
+.chapter-<%= i.sub '.', '-' %>
   <% chapter.each_pair do |j, section| %>
   .section-<%= j %>
     <% section.each_pair do |k, page| %>

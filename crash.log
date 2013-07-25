@@ -1,8 +1,8 @@
-Crashlog created at 2013-07-23 22:53:04 -0500
+Crashlog created at 2013-07-25 18:35:11 -0500
 
 ===== MESSAGE:
 
-Interrupt: Interrupt
+RuntimeError: Found 2 content files for content/chapters/3; expected 0 or 1
 
 ===== COMPILATION STACK:
 
@@ -10,97 +10,57 @@ Interrupt: Interrupt
 
 ===== STACK TRACE:
 
-  0. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:173:in `read'
-  1. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:173:in `block in sh'
-  2. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:173:in `popen'
-  3. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:173:in `sh'
-  4. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:138:in `exec_runtime'
-  5. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:28:in `block in exec'
-  6. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:41:in `compile_to_tempfile'
-  7. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/execjs-1.4.0/lib/execjs/external_runtime.rb:27:in `exec'
-  8. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/uglifier-2.1.1/lib/uglifier.rb:176:in `really_compile'
-  9. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/uglifier-2.1.1/lib/uglifier.rb:100:in `compile'
-  10. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/filters/uglify_js.rb:18:in `run'
-  11. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
-  12. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/result_data/item_rep.rb:344:in `filter'
-  13. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
-  14. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule_context.rb:55:in `filter'
-  15. ./Rules:21:in `block in load'
-  16. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
-  17. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
-  18. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:384:in `compile_rep'
-  19. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:340:in `block in compile_reps'
-  20. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `loop'
-  21. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:333:in `compile_reps'
-  22. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:89:in `run'
-  23. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:58:in `compile'
-  24. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:65:in `block in recompile'
-  25. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `chdir'
-  26. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `recompile'
-  27. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:24:in `run_all'
-  28. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:99:in `block in run_supervised_task'
-  29. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `catch'
-  30. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `run_supervised_task'
-  31. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:54:in `block (2 levels) in run'
-  32. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
-  33. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `each'
-  34. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `block (2 levels) in scoped_guards'
-  35. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `catch'
-  36. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `block in scoped_guards'
-  37. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `each'
-  38. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `scoped_guards'
-  39. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:53:in `block in run'
-  40. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/lumberjack-1.0.4/lib/lumberjack.rb:31:in `unit_of_work'
-  41. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:52:in `run'
-  42. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:242:in `block in run_all'
-  43. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:368:in `block in within_preserved_state'
-  44. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `synchronize'
-  45. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `within_preserved_state'
-  46. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:239:in `run_all'
-  47. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/commands/all.rb:23:in `process'
-  48. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:579:in `call'
-  49. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:453:in `call_with_hooks'
-  50. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:426:in `call_safely'
-  51. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:368:in `process_line'
-  52. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command_set.rb:350:in `process_line'
-  53. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:443:in `process_command'
-  54. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:426:in `retrieve_line'
-  55. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:301:in `block in r'
-  56. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:298:in `loop'
-  57. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:298:in `r'
-  58. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:276:in `re'
-  59. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:254:in `rep'
-  60. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:234:in `block (3 levels) in repl'
-  61. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:232:in `loop'
-  62. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:232:in `block (2 levels) in repl'
-  63. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:231:in `catch'
-  64. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:231:in `block in repl'
-  65. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:230:in `catch'
-  66. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:230:in `repl'
-  67. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_class.rb:248:in `run_command'
-  68. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/interactor.rb:144:in `block in create_run_all_command'
-  69. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:492:in `instance_exec'
-  70. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:492:in `call'
-  71. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:453:in `call_with_hooks'
-  72. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:426:in `call_safely'
-  73. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command.rb:368:in `process_line'
-  74. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/command_set.rb:350:in `process_line'
-  75. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:443:in `process_command'
-  76. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:426:in `retrieve_line'
-  77. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:301:in `block in r'
-  78. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:298:in `loop'
-  79. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:298:in `r'
-  80. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:276:in `re'
-  81. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:254:in `rep'
-  82. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:234:in `block (3 levels) in repl'
-  83. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:232:in `loop'
-  84. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:232:in `block (2 levels) in repl'
-  85. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:231:in `catch'
-  86. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:231:in `block in repl'
-  87. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:230:in `catch'
-  88. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_instance.rb:230:in `repl'
-  89. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/pry-0.9.12.2/lib/pry/pry_class.rb:170:in `start'
-  ... 92 more lines omitted. See full crash log for details.
+  0. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/data_sources/filesystem.rb:164:in `block in all_split_files_in'
+  1. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/data_sources/filesystem.rb:154:in `each_pair'
+  2. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/data_sources/filesystem.rb:154:in `all_split_files_in'
+  3. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/data_sources/filesystem.rb:78:in `load_objects'
+  4. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/data_sources/filesystem.rb:37:in `items'
+  5. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:325:in `block in load_items'
+  6. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:324:in `each'
+  7. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:324:in `load_items'
+  8. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:243:in `load'
+  9. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:127:in `layouts'
+  10. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:187:in `dependency_tracker'
+  11. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/memoization.rb:56:in `block in memoize'
+  12. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:456:in `stores'
+  13. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:146:in `unload'
+  14. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:274:in `unload'
+  15. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:254:in `rescue in load'
+  16. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:258:in `load'
+  17. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:117:in `load'
+  18. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:82:in `run'
+  19. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  20. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:65:in `block in recompile'
+  21. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `chdir'
+  22. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:63:in `recompile'
+  23. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-nanoc-1.0.1/lib/guard/nanoc.rb:28:in `run_on_changes'
+  24. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:99:in `block in run_supervised_task'
+  25. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `catch'
+  26. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:97:in `run_supervised_task'
+  27. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:144:in `block in run_first_task_found'
+  28. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:142:in `each'
+  29. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:142:in `run_first_task_found'
+  30. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:80:in `block in run_on_changes'
+  31. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:175:in `block (3 levels) in scoped_guards'
+  32. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `each'
+  33. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:173:in `block (2 levels) in scoped_guards'
+  34. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `catch'
+  35. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:172:in `block in scoped_guards'
+  36. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `each'
+  37. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:170:in `scoped_guards'
+  38. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard/runner.rb:72:in `run_on_changes'
+  39. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:105:in `block (2 levels) in setup_listener'
+  40. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:368:in `block in within_preserved_state'
+  41. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `synchronize'
+  42. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:365:in `within_preserved_state'
+  43. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/guard-1.8.1/lib/guard.rb:104:in `block in setup_listener'
+  44. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:252:in `call'
+  45. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:252:in `on_change'
+  46. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/listener.rb:287:in `block in initialize_adapter'
+  47. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `call'
+  48. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `report_changes'
+  49. /home/camilo/.rvm/gems/ruby-2.0.0-p195/gems/listen-1.2.2/lib/listen/adapter.rb:321:in `poll_changed_directories'
+  ... 52 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
@@ -157,7 +117,7 @@ COLORTERM => "gnome-terminal"
 COLUMNS => "80"
 COMPIZ_BIN_PATH => "/usr/bin/"
 COMPIZ_CONFIG_PROFILE => "ubuntu"
-DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-AC5QNRlElW,guid=50e7258820a795204b00e61551ef3804"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-S6lIYOCFut,guid=ac51b2e03bcdc45b29fc91be51f1b139"
 DEFAULTS_PATH => "/usr/share/gconf/ubuntu.default.path"
 DESKTOP_SESSION => "ubuntu"
 DISPLAY => ":0.0"
@@ -165,9 +125,9 @@ GDMSESSION => "ubuntu"
 GEM_HOME => "/home/camilo/.rvm/gems/ruby-2.0.0-p195"
 GEM_PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195:/home/camilo/.rvm/gems/ruby-2.0.0-p195@global"
 GNOME_DESKTOP_SESSION_ID => "this-is-deprecated"
-GNOME_KEYRING_CONTROL => "/run/user/camilo/keyring-UXOEvl"
-GNOME_KEYRING_PID => "2481"
-GPG_AGENT_INFO => "/run/user/camilo/keyring-UXOEvl/gpg:0:1"
+GNOME_KEYRING_CONTROL => "/run/user/camilo/keyring-qtZnfB"
+GNOME_KEYRING_PID => "2248"
+GPG_AGENT_INFO => "/run/user/camilo/keyring-qtZnfB/gpg:0:1"
 GREP_COLOR => "1;32"
 GREP_OPTIONS => "--color=auto"
 GTK_MODULES => "overlay-scrollbar"
@@ -193,30 +153,30 @@ LSCOLORS => "Gxfxcxdxbxegedabagacad"
 MANDATORY_PATH => "/usr/share/gconf/ubuntu.mandatory.path"
 MY_RUBY_HOME => "/home/camilo/.rvm/rubies/ruby-2.0.0-p195"
 NODE_PATH => "/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript"
-OLDPWD => "/home/camilo/Projects/tutorial/content"
+OLDPWD => "/home/camilo"
 PAGER => "less"
 PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195/bin:/usr/local/heroku/bin:/home/camilo/.rvm/gems/ruby-2.0.0-p195@global/bin:/home/camilo/.rvm/rubies/ruby-2.0.0-p195/bin:/home/camilo/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/camilo/.phpbrew/php/php-5.4.16/bin"
 PWD => "/home/camilo/Projects/tutorial"
 RUBYOPT => "-I/home/camilo/.rvm/gems/ruby-2.0.0-p195@global/gems/bundler-1.3.5/lib -rbundler/setup"
 RUBY_VERSION => "ruby-2.0.0-p195"
-SESSION_MANAGER => "local/humans-are-dead:@/tmp/.ICE-unix/2492,unix/humans-are-dead:/tmp/.ICE-unix/2492"
+SESSION_MANAGER => "local/humans-are-dead:@/tmp/.ICE-unix/2259,unix/humans-are-dead:/tmp/.ICE-unix/2259"
 SHELL => "/usr/bin/zsh"
 SHLVL => "1"
-SSH_AGENT_PID => "2538"
-SSH_AUTH_SOCK => "/run/user/camilo/keyring-UXOEvl/ssh"
+SSH_AGENT_PID => "2304"
+SSH_AUTH_SOCK => "/run/user/camilo/keyring-qtZnfB/ssh"
 TERM => "xterm"
 TEXTDOMAIN => "im-config"
 TEXTDOMAINDIR => "/usr/share/locale/"
 UBUNTU_MENUPROXY => "libappmenu.so"
 USER => "camilo"
-WINDOWID => "62914566"
+WINDOWID => "58720262"
 XAUTHORITY => "/home/camilo/.Xauthority"
 XDG_CONFIG_DIRS => "/etc/xdg/xdg-ubuntu:/etc/xdg"
 XDG_CURRENT_DESKTOP => "Unity"
 XDG_DATA_DIRS => "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"
 XDG_RUNTIME_DIR => "/run/user/camilo"
 XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
-XDG_SESSION_COOKIE => "55f4ca66c7023ab312e5019251903d21-1374631939.151605-767927727"
+XDG_SESSION_COOKIE => "55f4ca66c7023ab312e5019251903d21-1374794040.368538-601814130"
 XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
 _ => "/home/camilo/.rvm/gems/ruby-2.0.0-p195/bin/guard"
 _ORIGINAL_GEM_PATH => "/home/camilo/.rvm/gems/ruby-2.0.0-p195:/home/camilo/.rvm/gems/ruby-2.0.0-p195@global"

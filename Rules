@@ -30,7 +30,7 @@ compile '/pages/*' do
 end
 
 compile '/capitulo-*' do
-  filter :erb
+  filter :slim
   layout 'default'
 end
 

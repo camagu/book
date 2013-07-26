@@ -1,37 +1,57 @@
 @import "compass/reset"
 @import "compass/css3/transition"
-@import "compass/typography/text/replacement"
+
+$viewport-width: 768px
+$viewport-height: 1024px
+
+@mixin fits-viewport-width
+  width: $viewport-width
+
+@mixin fits-viewport-height
+  height: $viewport-height
+
+@mixin fits-viewport
+  +fits-viewport-width
+  +fits-viewport-height
+
+@mixin landscape-swipable
+  +transition(left 0.5s ease-out, top 0.5s ease-out)
+  display: inline-block
+  left: 0
+  position: relative
+  top: 0
+  white-space: nowrap
+
+  > *
+    box-sizing: border-box
+    display: inline-block
+    vertical-align: top
+    white-space: normal
 
 body
   color: white
-  font: 24px/1.2em Arial, Helvetica, sans-serif
-  width: 768px
+  font: 18px/1.5em Arial, Helvetica, sans-serif
+
+h2
+  font-size: 30px
+  font-weight: bold
+  line-height: 1.2em
+  margin-bottom: 1em
 
 .main
-  height: 1024px
-  width: 768px
+  +fits-viewport
   overflow: hidden
 
 .chapter
-  +transition(left 0.5s ease-out, top 0.5s ease-out)
-  white-space: nowrap
-  position: relative
-  left: 0
-  top: 0
-
-.section
-  display: inline-block
-  vertical-align: top
+  +landscape-swipable
 
 .page
+  +fits-viewport
   background-size: cover
-  height: 1024px
-  width: 768px
+  padding-top: 1px // Hack to prevent margin collapse
 
   .content
-    width: 500px
-    margin: 0 auto
-    padding-top: 70px
+    display: none
 
 <% pages.each_pair do |i, chapter| %>
 .chapter-<%= i %>
@@ -39,11 +59,20 @@ body
   .section-<%= j %>
     <% section.each_pair do |k, page| %>
     .page-<%= k %>
-      +replace-text('<%= page.identifier.sub("/pages/", "").gsub(/\/$/, "") + ".jpg" %>')
+      background-image: image-url('<%= page.identifier.sub("/pages/", "").gsub(/\/$/, "") + ".jpg" %>')
 
     <% end %>
   <% end %>
 <% end %>
+
+.interview
+  +landscape-swipable
+  background: rgba(84, 128, 147, .65)
+  margin-top: 547px
+
+  .interview-qa
+    +fits-viewport-width
+    padding: 44px 60px
 
 /* Viewport ----------- */
 @-webkit-viewport { width: device-width; }

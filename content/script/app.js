@@ -69,6 +69,11 @@ $(function() {
     });
   });
 
+  $('.chapter').hammer().on('doubletap', function(e) {
+    e.preventDefault();
+    window.location = '/capitulo-3/'
+  });
+
   /**
   * Widgets
   **/

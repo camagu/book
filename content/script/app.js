@@ -1,5 +1,5 @@
 <%= @items['/vendor/jquery/'].compiled_content %>
-<%= @items['/vendor/jquery.hammer/'].compiled_content %>
+<%= @items['/vendor/jquery-hammer/'].compiled_content %>
 
 Array.prototype.has = function(element) {
   return this.indexOf(element) !== -1;

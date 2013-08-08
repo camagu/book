@@ -1,30 +1,6 @@
 @import "compass/reset"
-
-$viewport-width: 768px
-$viewport-height: 1024px
-
-@mixin fits-viewport-width
-  width: $viewport-width
-
-@mixin fits-viewport-height
-  height: $viewport-height
-
-@mixin fits-viewport
-  +fits-viewport-width
-  +fits-viewport-height
-
-@mixin landscape-swipable
-  display: inline-block
-  left: 0
-  position: relative
-  top: 0
-  white-space: nowrap
-
-  > *
-    box-sizing: border-box
-    display: inline-block
-    vertical-align: top
-    white-space: normal
+@import "mixins/all"
+@import "variables"
 
 body
   color: white
@@ -60,49 +36,9 @@ h2
   <% end %>
 <% end %>
 
-.interview
-  +landscape-swipable
-  background: rgba(84, 128, 147, .65)
-  margin-top: 547px
+@import "widgets/all"
+@import "chapters/all"
 
-  .interview-qa
-    +fits-viewport-width
-    padding: 44px 60px
-
-.chapter-3-menu
-  margin-top: 714px
-
-  .chapter-3-menu-item
-    display: inline-block
-    font-weight: bold
-    margin-right: 18px
-    text-decoration: none
-    vertical-align: top
-
-    .chapter-menu-item-bullet
-      background-color: rgba(191, 221, 231, .65)
-      box-sizing: border-box
-      color: #94D6F4
-      font-size: 35px
-      line-height: 1.2em
-      padding: 0 0.2em
-      margin-bottom: 0.2em
-      width: 109px
-
-    .chapter-menu-item-title
-      background-color: #8AC2D3
-      box-sizing: border-box
-      color: white
-      height: 72px
-      line-height: 1.1em
-      padding: 0.4em
-      text-transform: uppercase
-      width: 178px
-
-    &:last-of-type
-      margin-right: 0
-
-/* Viewport ----------- */
 @-webkit-viewport { width: device-width; }
 @-moz-viewport    { width: device-width; }
 @-o-viewport      { width: device-width; }

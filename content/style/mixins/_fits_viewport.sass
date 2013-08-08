@@ -1,0 +1,11 @@
+@import "../variables"
+
+@mixin fits-viewport-width
+  width: $viewport-width
+
+@mixin fits-viewport-height
+  height: $viewport-height
+
+@mixin fits-viewport
+  +fits-viewport-width
+  +fits-viewport-height

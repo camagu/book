@@ -7,12 +7,14 @@ Array.prototype.has = function(element) {
 
 (function($) {
   $.fn.swipable = function(options) {
-    var settings = $.extend({
+    var
+
+    settings = $.extend({
       direction: 'horizontal',
       handles: null
-    }, options);
+    }, options),
 
-    var findHandles = function(swipable, handles) {
+    findHandles = function(swipable, handles) {
       if (null == handles) {
         handles = swipable.children();
       } else if (typeof handles === 'string') {
@@ -20,6 +22,20 @@ Array.prototype.has = function(element) {
       }
 
       return handles.hammer();
+    },
+
+    onSwipe = function(e) {
+      var swipable   = e.data.swipable,
+          property   = e.data.property,
+          dimension  = e.data.dimension,
+          op         = e.data.op,
+          properties = {};
+
+        e.preventDefault();
+        if (!swipable.is(':animated')) {
+          properties[property] = op+'='+$(this)[dimension]();
+          swipable.animate(properties, 500);
+        }
     };
 
     return this.each(function() {
@@ -39,15 +55,19 @@ Array.prototype.has = function(element) {
         throw 'Unrecognized direction "'+settings.direction+'".';
       }
 
-      handles.not(':first').on(swipe.prev, function(e) {
-        e.preventDefault();
-        swipable.css(property, '+='+$(this)[dimension]());
-      });
+      handles.not(':first').on(swipe.prev, {
+        swipable:  swipable,
+        property:  property,
+        dimension: dimension,
+        op:        '+'
+      }, onSwipe);
 
-      handles.not(':last').on(swipe.next, function(e) {
-        e.preventDefault();
-        swipable.css(property, '-='+$(this)[dimension]());
-      });
+      handles.not(':last').on(swipe.next, {
+        swipable:  swipable,
+        property:  property,
+        dimension: dimension,
+        op:        '-'
+      }, onSwipe);
     });
   };
 }(jQuery));

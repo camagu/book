@@ -12,7 +12,7 @@ compile '/style/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
-compile '/style/_*/' do
+compile /\/style.*?(?:\/_).*\// do
   # don’t compile partials
 end
 
@@ -52,7 +52,7 @@ compile '*' do
   end
 end
 
-route '/style/_*/' do
+route /\/style.*?(?:\/_).*\// do
   nil
 end
 
@@ -64,7 +64,7 @@ route '/script/*/' do
   item.identifier.chop + '.js'
 end
 
-route 'script/vendor/*/' do
+route '/vendor/*/' do
   nil
 end
 

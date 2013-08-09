@@ -25,6 +25,10 @@ compile 'vendor/*/' do
   # nothing
 end
 
+compile 'svg/*' do
+  # just like that
+end
+
 compile '/pages/*' do
   filter :slim
 end
@@ -32,6 +36,11 @@ end
 compile '/capitulo-*' do
   filter :slim
   layout 'default'
+end
+
+compile '/infografia/*' do
+  filter :slim
+  layout 'infographic'
 end
 
 compile '*' do
@@ -57,6 +66,10 @@ end
 
 route 'script/vendor/*/' do
   nil
+end
+
+route 'svg/*' do
+  item.identifier.chop + '.' + item[:extension]
 end
 
 route '/pages/*' do

@@ -30,7 +30,7 @@ h2
   .section-<%= j %>
     <% section.each_pair do |k, page| %>
     .page-<%= k %>
-      background-image: image-url('<%= page.identifier.sub("/pages/", "").gsub(/\/$/, "") + ".jpg" %>')
+      background-image: image-url('<%= page[:background] %>')
 
     <% end %>
   <% end %>

@@ -25,7 +25,7 @@ h2
   padding-top: 1px // Hack to prevent margin collapse
 
 <% pages.each_pair do |i, chapter| %>
-.chapter-<%= i.sub '.', '-' %>
+.chapter-<%= i %>
   <% chapter.each_pair do |j, section| %>
   .section-<%= j %>
     <% section.each_pair do |k, page| %>

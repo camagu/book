@@ -73,7 +73,7 @@ route '/pages/*' do
 end
 
 route '/chapter/*/' do
-  '/capitulo-' + item.identifier.sub('/chapter/', '') + 'index.html'
+  '/capitulo-' + item.identifier.sub('/chapter/', '').sub('_', '.') + 'index.html'
 end
 
 route '*' do

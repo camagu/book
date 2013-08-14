@@ -6,14 +6,14 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
 
     title "titulo"
-    link rel="stylesheet" href=@items['/style/app/'].path
+    link rel="stylesheet" href=relative_path('/style/app/')
     - (@item[:stylesheets] || []).each do |stylesheet|
-      link rel="stylesheet" href=@items[stylesheet].path
+      link rel="stylesheet" href=relative_path(stylesheet)
 
     meta name="generator" content="nanoc #{Nanoc::VERSION}"
   body
     .main
       ==yield
 
-    script src=@items['/script/app/'].path
+    script src=relative_path('/script/app/')
 

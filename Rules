@@ -39,11 +39,6 @@ compile '/chapter/*/' do
   layout 'default'
 end
 
-compile '/infografia/*' do
-  filter :slim
-  layout 'infographic'
-end
-
 compile '*' do
   if item.binary?
     # don’t filter binary items

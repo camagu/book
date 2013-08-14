@@ -34,7 +34,7 @@ compile '/pages/*' do
   filter :slim
 end
 
-compile '/capitulo-*' do
+compile '/chapter/*/' do
   filter :slim
   layout 'default'
 end
@@ -75,6 +75,10 @@ end
 
 route '/pages/*' do
   nil
+end
+
+route '/chapter/*/' do
+  '/capitulo-' + item.identifier.sub('/chapter/', '') + 'index.html'
 end
 
 route '*' do

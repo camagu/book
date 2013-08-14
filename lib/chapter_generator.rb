@@ -3,8 +3,8 @@ def generate_chapters
     @items << Nanoc::Item.new(
       "==render 'chapter', chapter: '#{chapter}'",
       { title: "Capitulo #{chapter}",
-        stylesheets: ["/style/chapters/#{chapter.sub('.', '_')}.css"] },
-      "/capitulo-#{chapter}"
+        stylesheets: ["/style/chapters/#{chapter.sub('.', '_')}/"] },
+      "/chapter/#{chapter}"
     )
   end
 end

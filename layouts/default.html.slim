@@ -6,7 +6,7 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
 
     title "titulo"
-    link rel="stylesheet" href=relative_path('/style/app/')
+    link rel="stylesheet" href=relative_path('/stylesheets/app/')
     - (@item[:stylesheets] || []).each do |stylesheet|
       link rel="stylesheet" href=relative_path(stylesheet)
 
@@ -15,5 +15,5 @@ html
     .main
       ==yield
 
-    script src=relative_path('/script/app/')
+    script src=relative_path('/scripts/app/')
 

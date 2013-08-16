@@ -8,16 +8,16 @@ preprocess do
   generate_chapters
 end
 
-compile '/style/*/' do
+compile '/stylesheets/*/' do
   filter :erb
   filter :sass, Compass.sass_engine_options
 end
 
-compile(/\/style.*?(?:\/_).*\//) do
+compile(/\/stylesheets.*?(?:\/_).*\//) do
   # don’t compile partials
 end
 
-compile 'script/*/' do
+compile 'scripts/*/' do
   filter :erb
   filter :uglify_js
 end
@@ -48,15 +48,15 @@ compile '*' do
   end
 end
 
-route(/\/style.*?(?:\/_).*\//) do
+route(/\/stylesheets.*?(?:\/_).*\//) do
   nil
 end
 
-route '/style/*/' do
+route '/stylesheets/*/' do
   item.identifier.chop + '.css'
 end
 
-route '/script/*/' do
+route '/scripts/*/' do
   item.identifier.chop + '.js'
 end
 

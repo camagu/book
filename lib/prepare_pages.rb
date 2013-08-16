@@ -1,7 +1,10 @@
 def prepare_pages
-  prefix = '/pages/'
+  old_prefix = '/pages/'
+  new_prefix = '/images/chapters/'
 
   page_items.each do |page|
-    page[:background] = page.identifier[prefix.length..-1].chomp('/') + '.jpg'
+    # TODO Use path
+    page[:background] = page.identifier
+                            .sub(old_prefix, new_prefix).chomp('/') + '.jpg'
   end
 end

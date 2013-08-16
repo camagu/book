@@ -23,9 +23,17 @@ $(function() {
     $('.chapter').trigger('changedpage');
   });
 
+  /**
+   * Chapter 3 menu
+   */
   $('.chapter').hammer().on('doubletap', function(e) {
     e.preventDefault();
-    window.location = '/capitulo-3/'
+    $('.navigator').addClass('visible');
+  });
+
+  $('.navigator').hammer().on('doubletap', function(e) {
+    e.preventDefault();
+    $(this).removeClass('visible');
   });
 
   /**

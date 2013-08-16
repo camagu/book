@@ -1,0 +1,138 @@
+@import "compass/css3/transition"
+@import "../../mixins/fits_viewport"
+@import "../../variables"
+
+$item-1-color: #8bc1d3
+$item-2-color: #b7d77c
+$item-3-color: #f1696f
+$item-4-color: #52c1b7
+
+$animation-duration: 0.5s
+
+.navigator
+  +fits-viewport
+  box-sizing: border-box
+  left: 0
+  position: absolute
+  overflow: hidden
+  top: 0
+  z-index: 5000
+
+  &.inner
+    +transition(visibility $animation-duration)
+    background-image: image-url('partials/chapter-3x/navigator/bg.png')
+    background-size: cover
+    padding-top: 0
+    visibility: hidden
+
+    &.visible
+      visibility: visible
+
+.home-link
+  background: image-url('partials/chapter-3x/navigator/home-link.png') no-repeat top left rgba(0, 0, 0, 0.4)
+  color: white
+  display: block
+  font:
+    size: 18px
+    weight: bold
+  padding: 17px 22px 16px 30px+22px
+  position: absolute
+  text-decoration: none
+  top: 50px
+
+.inner .home-link
+  +transition(margin-left $animation-duration ease-out)
+  margin-left: -100%
+
+.inner.visible .home-link
+  margin-left: 0
+
+.menu
+  position: absolute
+
+  .item
+    display: inline-block
+    font-weight: bold
+    margin-right: 18px
+    text-decoration: none
+    vertical-align: top
+
+    .bullet
+      background-color: rgba(191, 221, 231, .65)
+      box-sizing: border-box
+      padding: 0 0.2em
+      margin-bottom: 0.2em
+      width: 109px
+
+    .title
+      box-sizing: border-box
+      color: white
+      line-height: 1.1em
+      padding: 0.4em
+      text-transform: uppercase
+      width: 178px
+
+    &:last-of-type
+      margin-right: 0
+
+.cover .menu
+  top: 723px
+
+  .item
+    .bullet
+      color: #94D6F4
+      font-size: 35px
+      line-height: 1.2em
+
+    .title
+      background-color: #8AC2D3
+      height: 72px
+
+.inner .menu
+  +transition(margin-bottom $animation-duration ease-out)
+  bottom: 0
+  margin-bottom: -200px
+
+  &:before,
+  &:after
+    background-image: image-url('partials/chapter-3x/navigator/separator.png')
+    content: ' '
+    display: block
+    height: 19px
+    margin: 7px 0
+
+  .item
+    .bullet
+      font-size: 52px
+      line-height: 1em
+
+    .title
+      font-size: 16px
+      height: 74px
+
+    &:nth-of-type(1)
+      .bullet
+        color: $item-1-color
+      .title
+        background-color: $item-1-color
+
+    &:nth-of-type(2)
+      .bullet
+        color: $item-2-color
+      .title
+        background-color: $item-2-color
+
+    &:nth-of-type(3)
+      .bullet
+        color: $item-3-color
+      .title
+        background-color: $item-3-color
+
+    &:nth-of-type(4)
+      .bullet
+        color: $item-4-color
+      .title
+        background-color: $item-4-color
+
+.inner.visible .menu
+  margin-bottom: 0
